@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            margin: auto;
+            width: 80%;
+            box-shadow: 10px 10px 10px 10px gray;
+            padding: 10px;
+            background-color: goldenrod;
+        }
+        
+        #hearder {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <b><h1 id= hearder>Travel reservation from</h1></b><br>
+        <p>To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the
+            elements you want from the different galleries</p>
+        <form>
+            <ol>
+                <li>What is your name?<br>
+                    <input type="text" size="30">
+                </li>
+                <li>What is your date of birth?<br>Month:
+                    <select>
+                        <script>
+                            for(i=1;i<=12;i++)
+                            document.write("<option value="+i+">"+i+"</option>");
+                        </script>
+                    </select> Date:
+                    <select>
+                        <script>
+                            for(i=1;i<=31;i++)
+                            document.write("<option value="+i+">"+i+"</option>");
+                        </script>
+                    </select> Year:
+                    <select>
+                        <script>
+                            for(i=1990;i<=2022;i++)
+                            document.write("<option value="+i+">"+i+"</option>");
+                        </script>
+                    </select>
+                </li>
+                <li>What is your mailing address?<br>
+                    <input type="text" placeholder="
+                    Number/P.O. Box/Route:
+                    Street/Avenue/Road:
+                    City:
+                    State/Zip:">
+                </li>
+                <li>What is your email address?<br>
+                    <input type="text" size="30">
+                </li>
+                <li>Heve you viewed ỏi online product catalog?<br>
+                    <input checked="checked" name="yes" type="radio" value="yes" />Yes
+                    <input name="No" type="radio" value="No" />No<br>
+                </li>
+                <li>If so, what product(s), besides the one you are ordering,?<br>
+                    <input type="checkbox" name="VCR" value="VCR">CVR<br>
+                    <input type="checkbox" name="Big Screen TV" value="Big Screen TV">Big Screen TV<br>
+                    <input type="checkbox" name="Audio Equipment" value="Audio Equipment">Audio Equipment<br>
+                    <input type="checkbox" name="Video Equipment" value="Video Equipment">Video Equipment<br>
+                    <input type="checkbox" name="Camera Equipment" value="Camera Equipment">Camera Equipment<br>
+                    <label for="Other">
+                        <input type="checkbox">
+                        Other
+                            <input type="text" placeholder="Please list:">
+                    </label>
+                </li>
+                <li>Do you have any questions, comments or suggestions before proceeding to the Order Form?
+                    <input type="text" size="50" placeholder="Your Input:">
+                </li>
+            </ol>
+            <tr>
+                <input type="submit" size="5" value="Send Form">
+                <input type="reset" size="5" value="Clear Form">
+            </tr>
+        </form>
+    </div>
+</body>
+
+</html>

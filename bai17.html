@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai17</title>
+    <style>
+        #content {
+            margin: auto;
+            width: 50%;
+            box-shadow: 10px 10px 10px 10px gray;
+            padding: 10px;
+        }
+        
+        #hearder {
+            text-align: center;
+        }
+        
+        #ket {
+            text-align: center;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <b><h1 id= hearder>Travel reservation from</h1></b>
+        <h2>*denotes mandotory</h2>
+        <form action="">
+            <label for="Full name*">Full name*</label><br>
+            <input type="text" name="Full name" placeholder="FirstName LastName" required><br>
+            <label for="Email*">Email address*</label><br>
+            <input type="text" email="Email" placeholder="EMAIL_ADDRESS" required><br>
+            <tr>Select Tour Package*</tr><br>
+            <select for="select"><option Goa="Goa">Goa</option><option cho="cho">Cho</option></select><br>
+            <label for="Arrival date*">Arrival date*</label><br>
+            <input type="text" date="Arrival date*" placeholder="m/d/y" required><br>
+            <label for="Number of persons*">Number of persons*</label><br>
+            <input type="text" date="Number of persons*" placeholder="UNKNOWN_TYPE" required><br>
+            <tr>What would you want to avail?*</tr><br>
+            <il for="Boarding">Boarding</il>
+            <input type="checkbox" name="Boarding" value="Boarding"><br>
+            <il for="Fooding">Fooding</il>
+            <input type="checkbox" name="Fooding" value="Fooding"><br>
+            <il for="Sight seeing">Sight seeing</il>
+            <input type="checkbox" name="Sight seeing" value="Sight seeing"><br>
+            <label for="Discout Coupon code">Discout Coupon code</label><br>
+            <input type="text" name="Discout Coupon code" placeholder="UNKNOWN_TYPE" required><br>
+            <tr>Tern and conditions*</tr><br>
+            <input checked="checked" name="I agree" type="radio" value="I agree" />I agree
+            <input name="I disagree" type="radio" value="I disagree" />I disagree<br>
+            <input id="ket" type="submit" value="Complete reservation">
+        </form>
+    </div>
+</body>
+
+</html>
